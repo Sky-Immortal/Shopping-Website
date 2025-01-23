@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    .download-inner-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-container, .right-container {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .right-container {
+        justify-content: center; 
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.phone-behind {
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 10s linear infinite;
+}
+
+.download-inner-container h2{
+    line-height: 2.5rem;
+}
+
+.download-inner-container p {
+    line-height: 1.5rem;
+}

@@ -1,0 +1,106 @@
+.inner-container {
+    border-radius: 2.5rem;
+    background: #F4F6F5;
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: 800; 
+    margin-bottom: 1rem; 
+    line-height: 1.25; 
+}
+
+.left-container {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+}
+
+.right-container {
+    margin-top: 1rem;
+}
+
+.header .span-element {
+    width: 250px;
+    height: 55px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    z-index: -1;
+    transform: rotate(-3deg);
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.875rem; /* 5xl */
+    }
+
+    .outer-container {
+        padding: 0 0.5rem;
+    }
+
+    .header .span-element {
+        width: 120px;
+        height: 35px;
+        bottom: 5px;
+        left: -5px;
+    }
+
+    .left-container {
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+    }
+
+    .right-container {
+        margin-top: 0rem;
+    }
+
+    .shop-now {
+        justify-content: center;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

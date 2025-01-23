@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap');
+:root {
+  --font-family: 'Tenor Sans', sans-serif;
+
+  /* Colors */
+  --primary-color: #A8715A;
+  --secondary-color: #DD8560;
+  --line-color: #E0CFBA;
+  --input-background: #F9F9F9;
+  --background: #F8F0E7;
+  --off-white: #FCFCFC;
+  --title-active: #000000;
+  --body: #333333;
+  --label: #555555;
+  --placeholder: #888888;
+
+  /* Font Sizes */
+  --title-font-size: 18px;
+  --sub-title-font-size: 16px;
+  --sub-sub-title-font-size: 14px;
+  --body-L-font-size: 16px;
+  --body-M-font-size: 14px;
+  --body-S-font-size: 12px;
+
+  /* Line Heights */
+  --title-line-height: 40px;
+  --sub-title-line-height: 24px;
+  --sub-sub-title-line-height: 20px;
+  --body-L-line-height: 24px;
+  --body-M-line-height: 24px;
+  --body-S-line-height: 18px;
+
+  /* Letter Spacing */
+  --title-letter-spacing: 4px;
+  --sub-title-letter-spacing: 2px;
+  --sub-sub-title-letter-spacing: 2px;
+
+  /* Icon Size */
+  --icon-size: 24px;
+}
+
+@media (max-width: 400px) {
+  body {
+    max-width: 100%; /* Allow full width on smaller screens */
+    margin: 0 auto; /* Center the body */
+  }
+
+  .social-icons {
+    max-width: 160px; /* Max width for the social icons container */
+    margin: 0 auto; /* Center the container */
+  }
+
+}
+

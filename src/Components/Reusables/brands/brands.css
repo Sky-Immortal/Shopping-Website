@@ -1,0 +1,35 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.cn-outer-container {
+  max-width: 1280px; /* same as Home.css */
+  margin: 0 auto;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.cn-inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: scroll 20s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .cn-inner-container {
+    flex-wrap: nowrap;
+    animation: scroll 40s linear infinite;
+  }
+
+  .brand-image {
+    width: 20%;
+    height: auto;
+    margin: 0 0.5rem;
+  }
+}

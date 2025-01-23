@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --icon-yellow: #EBD96B;
+  --footer-yellow: #E5C643;
+  --gray: #D9D9D9;
+  --dark-gray: #8E8E8E;
+  --download-gray: #7C7C7C;
+  --fav-gray: #7F7F7F;
+  --header-gray: #F4F6F5;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ls-lg {
+  letter-spacing: 2px;
+}
+
+.ls-md {
+  letter-spacing: 1.5px;
+}
+
+.ls-sm {
+  letter-spacing: 0.8px;
+}
+
+.ls-xs {
+  letter-spacing: -0.5px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.c-gray {
+  color: var(--fav-gray);
+}
+
+.h-gray {
+
+  color: var(--header-gray);
+}
+
+.f-d-gray {
+  color: var(--dark-gray);
+}
+
+.f-gray {
+  color: var(--gray);
+}
+
+.d-gray {
+  color: var(--download-gray);
+}
+
+.f-yellow {
+  background-color: var(--footer-yellow);
+}
+
+.i-yellow {
+  background-color: var(--icon-yellow);
+}

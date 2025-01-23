@@ -1,0 +1,83 @@
+.discounts-inner-container {
+    height: 500px;
+    z-index: -10;
+}
+
+
+.welcome-text {
+    line-height: 4rem;
+}
+
+.payday-span {
+    position: relative;
+    z-index: 1;
+}
+
+.white-rectangle {
+    position: absolute;
+    bottom: 5%;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transform: rotate(-2deg);
+}
+
+@media (max-width: 768px) {
+    .discounts-inner-container {
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+        align-items:end;
+        text-align: center;
+    }
+
+    .right-container {
+        width: 50%;
+        padding: 0 1rem;
+    }
+
+    .white-rectangle {
+        width: 110%;
+    }
+
+    .welcome-text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .text-lg {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .date {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .discounts-inner-container {
+        align-items: center;
+        position: relative;
+    }
+
+    .discounts-inner-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: -1;
+    }
+
+    .right-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
