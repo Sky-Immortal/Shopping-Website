@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Shopping-Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Just the Landing Page of a Shopping Website
+
+Made using React and Tailwind CSS.
+
+This project was bootstrapped with [Create React App]
 
 ## Available Scripts
 
